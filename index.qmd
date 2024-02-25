@@ -1,0 +1,335 @@
+---
+title: "Team"
+subtitle: "Team grid layout component for Quarto"
+description: "A quarto shortcode extension to add team team layout for html format"
+author: "Roy Francis"
+date: last-modified
+date-format: DD-MMM-YYYY
+toc: true
+number-sections: true
+title-block-banner: true
+team:
+  - team:
+    - name: Preston Donald
+      image: https://images.generated.photos/mwPp9cKhJ9MXZ-w8_RUUAOTi7LqElZb7OvQrEb_IVLA/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/ODc5NzcyLmpwZw.jpg
+      description: Description
+  - team-a:
+    - name: Koa Amin
+      image: https://images.generated.photos/kBmZ3-ZV_H_siHy0kJoPMXxO90it5palMqarwVB07Xc/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NTk0MDA0LmpwZw.jpg
+      description: President
+    - name: Albert Parker
+      image: https://images.generated.photos/M9uItQDtYe_6yn-aoBV5kVdvil03ECYX-rmnGPBEUDs/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/OTQ5ODAwLmpwZw.jpg
+      description: Vice President
+    - name: Nicole Shields
+      image: https://images.generated.photos/SX0rvAZr8bz4hiKhk2hH7N7RWPY75sFID6_mso-bTWs/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MjM4NjUxLmpwZw.jpg
+      description: Contractor
+    - name: Hadassah Mohmamin
+      image: https://images.generated.photos/3fwZBGZRhQeeykAJPim6e-cVmzI_fw4E8MmKZqGtfpo/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NTY1OTU3LmpwZw.jpg
+      description: Contractor
+    - name: Ariel Pererra
+      image: https://images.generated.photos/KpzGCMt0exqdiIQpixMjf_GSeLyvhlsD-0DzDq85QKg/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MjUzNjUxLmpwZw.jpg
+      description: Human resources
+  - team-b:
+    - name: Preston Donald
+      image: https://images.generated.photos/mwPp9cKhJ9MXZ-w8_RUUAOTi7LqElZb7OvQrEb_IVLA/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/ODc5NzcyLmpwZw.jpg
+      description: Description
+    - name: Candice Gallegos
+      image: https://images.generated.photos/cdXGyJ8-yGT8WjeCEjvhvcwBNjbVsB6ip8Tdj29jNtI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDY0ODIyLmpwZw.jpg
+      description: Description
+    - name: Raquel Terell
+      image: https://images.generated.photos/IgdOCj2Vb_fq44z372xJwGnUTKwD7sZhptol5Ga9yQI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/Mjc1NDYzLmpwZw.jpg
+      description: Description
+    - name: Zaria West
+      image: https://images.generated.photos/GYbbXppoPDuSml-FZxFJrHiGgQY3ZagpoN0QpZZ7xEY/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDI4NTY3LmpwZw.jpg
+      description: Description
+    - name: Niklaus Lugo
+      image: https://images.generated.photos/NmE9GJA6meMfgzuYPtkv_7FYrFqV90Cj6-ClqetB5Dk/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NTI2NTkxLmpwZw.jpg
+      description: Description
+  - team-c:
+    - name: Preston Donald
+      name_url: https://images.generated.photos/mwPp9cKhJ9MXZ-w8_RUUAOTi7LqElZb7OvQrEb_IVLA/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/ODc5NzcyLmpwZw.jpg
+      image: https://images.generated.photos/mwPp9cKhJ9MXZ-w8_RUUAOTi7LqElZb7OvQrEb_IVLA/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/ODc5NzcyLmpwZw.jpg
+      image_url: https://images.generated.photos/mwPp9cKhJ9MXZ-w8_RUUAOTi7LqElZb7OvQrEb_IVLA/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/ODc5NzcyLmpwZw.jpg
+      description: Description
+    - name: Candice Gallegos
+      name_url: https://images.generated.photos/cdXGyJ8-yGT8WjeCEjvhvcwBNjbVsB6ip8Tdj29jNtI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDY0ODIyLmpwZw.jpg
+      image: https://images.generated.photos/cdXGyJ8-yGT8WjeCEjvhvcwBNjbVsB6ip8Tdj29jNtI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDY0ODIyLmpwZw.jpg
+      image_url: https://images.generated.photos/cdXGyJ8-yGT8WjeCEjvhvcwBNjbVsB6ip8Tdj29jNtI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDY0ODIyLmpwZw.jpg
+      description: Description
+    - name: Raquel Terell
+      name_url: https://images.generated.photos/IgdOCj2Vb_fq44z372xJwGnUTKwD7sZhptol5Ga9yQI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/Mjc1NDYzLmpwZw.jpg
+      image: https://images.generated.photos/IgdOCj2Vb_fq44z372xJwGnUTKwD7sZhptol5Ga9yQI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/Mjc1NDYzLmpwZw.jpg
+      image_url: https://images.generated.photos/IgdOCj2Vb_fq44z372xJwGnUTKwD7sZhptol5Ga9yQI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/Mjc1NDYzLmpwZw.jpg
+      description: Description
+    - name: Zaria West
+      name_url: https://images.generated.photos/GYbbXppoPDuSml-FZxFJrHiGgQY3ZagpoN0QpZZ7xEY/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDI4NTY3LmpwZw.jpg
+      image: https://images.generated.photos/GYbbXppoPDuSml-FZxFJrHiGgQY3ZagpoN0QpZZ7xEY/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDI4NTY3LmpwZw.jpg
+      image_url: https://images.generated.photos/GYbbXppoPDuSml-FZxFJrHiGgQY3ZagpoN0QpZZ7xEY/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDI4NTY3LmpwZw.jpg
+      description: Description
+    - name: Niklaus Lugo
+      name_url: https://images.generated.photos/NmE9GJA6meMfgzuYPtkv_7FYrFqV90Cj6-ClqetB5Dk/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NTI2NTkxLmpwZw.jpg
+      image: https://images.generated.photos/NmE9GJA6meMfgzuYPtkv_7FYrFqV90Cj6-ClqetB5Dk/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NTI2NTkxLmpwZw.jpg
+      image_url: https://images.generated.photos/NmE9GJA6meMfgzuYPtkv_7FYrFqV90Cj6-ClqetB5Dk/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NTI2NTkxLmpwZw.jpg
+      description: Description
+  - team-d:
+    - name: Preston Donald
+      image: https://images.generated.photos/mwPp9cKhJ9MXZ-w8_RUUAOTi7LqElZb7OvQrEb_IVLA/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/ODc5NzcyLmpwZw.jpg
+      description: Description
+    - name: Candice Gallegos
+      image: https://images.generated.photos/cdXGyJ8-yGT8WjeCEjvhvcwBNjbVsB6ip8Tdj29jNtI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDY0ODIyLmpwZw.jpg
+      description: Description
+    - name: Raquel Terell
+      image: https://images.generated.photos/IgdOCj2Vb_fq44z372xJwGnUTKwD7sZhptol5Ga9yQI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/Mjc1NDYzLmpwZw.jpg
+      description: Description
+    - name: Zaria West
+      image: https://images.generated.photos/GYbbXppoPDuSml-FZxFJrHiGgQY3ZagpoN0QpZZ7xEY/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDI4NTY3LmpwZw.jpg
+      description: Description
+    - name: Niklaus Lugo
+      image: https://images.generated.photos/NmE9GJA6meMfgzuYPtkv_7FYrFqV90Cj6-ClqetB5Dk/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NTI2NTkxLmpwZw.jpg
+      description: Description
+  - simple-formatting:
+    - name: "Preston Donald"
+      image: https://images.generated.photos/mwPp9cKhJ9MXZ-w8_RUUAOTi7LqElZb7OvQrEb_IVLA/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/ODc5NzcyLmpwZw.jpg
+      description: "This is **bold** and *italic*. This is a [link](https://quarto.org/)."
+format:
+  html:
+   css: styles.css
+filters:
+  - team
+---
+
+## Install
+
+- Requires Quarto >= 1.4.0  
+- In the root of the quarto project, run in terminal:  
+
+```bash
+quarto add royfrancis/quarto-team
+```
+
+This will install the extension under the `_extensions` subdirectory.
+
+## Usage
+
+- Add `team` to filters  
+- Define team contents (name, image, etc ...) under yaml keyword `team`  
+- Insert shortcode in the quarto document  
+
+Here is the syntax where `[text]` is replaced as needed.
+
+```yaml
+---
+team:
+  - [label]:
+    - image: [url/path to image]
+      name: [text content for name]
+      description: [text content for description]
+filters:
+  - team
+---
+
+{{{< team [label] >}}}
+```
+
+### Minimal usage
+
+Name and image are mandatory. Other parameters are optional. 
+
+```yaml
+---
+team:
+  - team:
+    - name: Preston Donald
+      image: https://images.generated.photos/mwPp9cKhJ9MXZ-w8_RUUAOTi7LqElZb7OvQrEb_IVLA/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/ODc5NzcyLmpwZw.jpg
+      description: Description
+filters:
+  - team
+---
+
+{{{< team team >}}}
+```
+
+{{< team team >}}
+
+### Multiple team blocks
+
+Multiple team block can be included on the same page using different labels.
+
+```yaml
+---
+team:
+  - team-a:
+    - name: Koa Amin
+      image: https://images.generated.photos/kBmZ3-ZV_H_siHy0kJoPMXxO90it5palMqarwVB07Xc/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NTk0MDA0LmpwZw.jpg
+      description: President
+    - name: Albert Parker
+      image: https://images.generated.photos/M9uItQDtYe_6yn-aoBV5kVdvil03ECYX-rmnGPBEUDs/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/OTQ5ODAwLmpwZw.jpg
+      description: Vice President
+    - name: Nicole Shields
+      image: https://images.generated.photos/SX0rvAZr8bz4hiKhk2hH7N7RWPY75sFID6_mso-bTWs/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MjM4NjUxLmpwZw.jpg
+      description: Contractor
+    - name: Hadassah Mohmamin
+      image: https://images.generated.photos/3fwZBGZRhQeeykAJPim6e-cVmzI_fw4E8MmKZqGtfpo/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NTY1OTU3LmpwZw.jpg
+      description: Contractor
+    - name: Ariel Pererra
+      image: https://images.generated.photos/KpzGCMt0exqdiIQpixMjf_GSeLyvhlsD-0DzDq85QKg/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MjUzNjUxLmpwZw.jpg
+      description: Human resources
+  - team-b:
+    - name: Preston Donald
+      image: https://images.generated.photos/mwPp9cKhJ9MXZ-w8_RUUAOTi7LqElZb7OvQrEb_IVLA/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/ODc5NzcyLmpwZw.jpg
+      description: Description
+    - name: Candice Gallegos
+      image: https://images.generated.photos/cdXGyJ8-yGT8WjeCEjvhvcwBNjbVsB6ip8Tdj29jNtI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDY0ODIyLmpwZw.jpg
+      description: Description
+    - name: Raquel Terell
+      image: https://images.generated.photos/IgdOCj2Vb_fq44z372xJwGnUTKwD7sZhptol5Ga9yQI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/Mjc1NDYzLmpwZw.jpg
+      description: Description
+    - name: Zaria West
+      image: https://images.generated.photos/GYbbXppoPDuSml-FZxFJrHiGgQY3ZagpoN0QpZZ7xEY/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDI4NTY3LmpwZw.jpg
+      description: Description
+    - name: Niklaus Lugo
+      image: https://images.generated.photos/NmE9GJA6meMfgzuYPtkv_7FYrFqV90Cj6-ClqetB5Dk/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NTI2NTkxLmpwZw.jpg
+      description: Description
+filters:
+  - team
+---
+
+**Team A**
+
+{{{< team team-a >}}}
+
+**Team B**
+
+{{{< team team-b >}}}
+```
+
+**Team A**
+
+{{< team team-a >}}
+
+**Team B**
+
+{{< team team-b >}}
+
+### Links
+
+URL links can be set on the image using `image_url` or on the name using `name_url`.
+
+```yaml
+---
+team:
+  - team-c:
+    - name: Preston Donald
+      name_url: https://images.generated.photos/mwPp9cKhJ9MXZ-w8_RUUAOTi7LqElZb7OvQrEb_IVLA/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/ODc5NzcyLmpwZw.jpg
+      image: https://images.generated.photos/mwPp9cKhJ9MXZ-w8_RUUAOTi7LqElZb7OvQrEb_IVLA/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/ODc5NzcyLmpwZw.jpg
+      image_url: https://images.generated.photos/mwPp9cKhJ9MXZ-w8_RUUAOTi7LqElZb7OvQrEb_IVLA/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/ODc5NzcyLmpwZw.jpg
+      description: Description
+    - name: Candice Gallegos
+      name_url: https://images.generated.photos/cdXGyJ8-yGT8WjeCEjvhvcwBNjbVsB6ip8Tdj29jNtI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDY0ODIyLmpwZw.jpg
+      image: https://images.generated.photos/cdXGyJ8-yGT8WjeCEjvhvcwBNjbVsB6ip8Tdj29jNtI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDY0ODIyLmpwZw.jpg
+      image_url: https://images.generated.photos/cdXGyJ8-yGT8WjeCEjvhvcwBNjbVsB6ip8Tdj29jNtI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDY0ODIyLmpwZw.jpg
+      description: Description
+    - name: Raquel Terell
+      name_url: https://images.generated.photos/IgdOCj2Vb_fq44z372xJwGnUTKwD7sZhptol5Ga9yQI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/Mjc1NDYzLmpwZw.jpg
+      image: https://images.generated.photos/IgdOCj2Vb_fq44z372xJwGnUTKwD7sZhptol5Ga9yQI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/Mjc1NDYzLmpwZw.jpg
+      image_url: https://images.generated.photos/IgdOCj2Vb_fq44z372xJwGnUTKwD7sZhptol5Ga9yQI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/Mjc1NDYzLmpwZw.jpg
+      description: Description
+    - name: Zaria West
+      name_url: https://images.generated.photos/GYbbXppoPDuSml-FZxFJrHiGgQY3ZagpoN0QpZZ7xEY/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDI4NTY3LmpwZw.jpg
+      image: https://images.generated.photos/GYbbXppoPDuSml-FZxFJrHiGgQY3ZagpoN0QpZZ7xEY/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDI4NTY3LmpwZw.jpg
+      image_url: https://images.generated.photos/GYbbXppoPDuSml-FZxFJrHiGgQY3ZagpoN0QpZZ7xEY/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDI4NTY3LmpwZw.jpg
+      description: Description
+    - name: Niklaus Lugo
+      name_url: https://images.generated.photos/NmE9GJA6meMfgzuYPtkv_7FYrFqV90Cj6-ClqetB5Dk/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NTI2NTkxLmpwZw.jpg
+      image: https://images.generated.photos/NmE9GJA6meMfgzuYPtkv_7FYrFqV90Cj6-ClqetB5Dk/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NTI2NTkxLmpwZw.jpg
+      image_url: https://images.generated.photos/NmE9GJA6meMfgzuYPtkv_7FYrFqV90Cj6-ClqetB5Dk/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NTI2NTkxLmpwZw.jpg
+      description: Description
+format: html
+filters:
+  - team
+---
+
+{{{< team team-c >}}}
+```
+
+**Team C**
+
+{{< team team-c >}}
+
+### CSS styling
+
+To target all team components on a page, target the class `.quarto-team`. To target specific team blocks, use the id. For example;
+
+```yaml
+---
+team:
+  - team-d:
+    - name: Preston Donald
+      image: https://images.generated.photos/mwPp9cKhJ9MXZ-w8_RUUAOTi7LqElZb7OvQrEb_IVLA/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/ODc5NzcyLmpwZw.jpg
+      description: Description
+    - name: Candice Gallegos
+      image: https://images.generated.photos/cdXGyJ8-yGT8WjeCEjvhvcwBNjbVsB6ip8Tdj29jNtI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDY0ODIyLmpwZw.jpg
+      description: Description
+    - name: Raquel Terell
+      image: https://images.generated.photos/IgdOCj2Vb_fq44z372xJwGnUTKwD7sZhptol5Ga9yQI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/Mjc1NDYzLmpwZw.jpg
+      description: Description
+    - name: Zaria West
+      image: https://images.generated.photos/GYbbXppoPDuSml-FZxFJrHiGgQY3ZagpoN0QpZZ7xEY/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDI4NTY3LmpwZw.jpg
+      description: Description
+    - name: Niklaus Lugo
+      image: https://images.generated.photos/NmE9GJA6meMfgzuYPtkv_7FYrFqV90Cj6-ClqetB5Dk/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NTI2NTkxLmpwZw.jpg
+      description: Description
+format:
+  html:
+    css: styles.css
+filters:
+  - team
+---
+
+{{{< team team-d >}}}
+```
+
+And here is the css file. Note that we use `#quarto-team-team-c`, ie; `#quarto-team-` followed by the team component label.
+
+```css
+/*-- scss:rules --*/
+
+#quarto-team-team-d {
+  background-image: radial-gradient(#517699 0.5px, #dbe9f6 0.5px);
+  background-size: 10px 10px;
+  padding: 1em;
+  border-radius: 15px;
+}
+
+#quarto-team-team-d .name {
+  color: steelblue;
+}
+```
+
+{{< team team-d >}}
+
+## Limitations
+
+### Text formatting
+
+Text formatting in yaml metadata does not work.
+
+```yaml
+---
+team:
+  - simple-formatting:
+    - image: https://images.generated.photos/mwPp9cKhJ9MXZ-w8_RUUAOTi7LqElZb7OvQrEb_IVLA/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/ODc5NzcyLmpwZw.jpg
+      name: "Preston Donald"
+      description: "This is **bold** and *italic*. This is a [link](https://quarto.org/)."
+filters:
+  - team
+---
+
+{{{< team simple-formatting >}}}
+```
+
+{{< team simple-formatting >}}
+
+### Other output formats
+
+The team content is simply ignored when the output format is anything other than `html`.

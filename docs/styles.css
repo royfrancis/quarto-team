@@ -1,0 +1,12 @@
+/*-- scss:rules --*/
+
+#quarto-team-team-d {
+  background-image: radial-gradient(#517699 0.5px, #dbe9f6 0.5px);
+  background-size: 10px 10px;
+  padding: 1em;
+  border-radius: 15px;
+}
+
+#quarto-team-team-d .name {
+  color: steelblue;
+}

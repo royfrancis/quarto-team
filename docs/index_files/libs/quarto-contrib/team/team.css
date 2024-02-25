@@ -1,0 +1,43 @@
+/* accordion css styles */
+
+/* preserve whitespace
+.quarto-accordion .accordion-header-content,
+.quarto-accordion .accordion-body-content, {
+  white-space: pre-wrap;
+}
+*/
+
+:root {
+  --dim: 180px;
+}
+
+.quarto-team .team-parent {
+  display: -ms-grid;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(var(--dim), 1fr));
+  justify-content: center;
+}
+
+.quarto-team .team-child {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.quarto-team .team-child img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 0.5em;
+  height: var(--dim);
+  width: var(--dim);
+}
+
+.quarto-team .team-child .name {
+  font-weight: bold;
+}
+
+.quarto-team .team-child a:hover  {
+  -webkit-filter: brightness(0.85);
+  filter: brightness(0.85);
+}
