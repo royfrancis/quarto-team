@@ -1,0 +1,57 @@
+---
+title: "Team Revealjs Test"
+subtitle: "Testing the team shortcode in revealjs"
+author: "Roy Francis"
+date: last-modified
+date-format: DD-MMM-YYYY
+team:
+  - yaml-team:
+    - name: Koa Amin
+      image: https://images.generated.photos/kBmZ3-ZV_H_siHy0kJoPMXxO90it5palMqarwVB07Xc/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NTk0MDA0LmpwZw.jpg
+      description: President
+    - name: Albert Parker
+      image: https://images.generated.photos/M9uItQDtYe_6yn-aoBV5kVdvil03ECYX-rmnGPBEUDs/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/OTQ5ODAwLmpwZw.jpg
+      description: Vice President
+  - yaml-markdown:
+    - name: "**Nicole Shields**"
+      image: https://images.generated.photos/SX0rvAZr8bz4hiKhk2hH7N7RWPY75sFID6_mso-bTWs/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MjM4NjUxLmpwZw.jpg
+      description: "This is **bold** and *italic*."
+format:
+  revealjs:
+    smaller: true
+    scrollable: true
+filters:
+  - team
+---
+
+## S1: YAML metadata
+
+```lua
+{{{< team yaml-team >}}}
+```
+
+{{< team yaml-team >}}
+
+## S2: YAML markdown formatting
+
+```lua
+{{{< team yaml-markdown >}}}
+```
+
+{{< team yaml-markdown >}}
+
+## S3: Inline JSON items
+
+```lua
+{{{< team items='[{"name":"Koa Amin","image":"https://images.generated.photos/kBmZ3-ZV_H_siHy0kJoPMXxO90it5palMqarwVB07Xc/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NTk0MDA0LmpwZw.jpg","description":"President"},{"name":"Albert Parker","image":"https://images.generated.photos/M9uItQDtYe_6yn-aoBV5kVdvil03ECYX-rmnGPBEUDs/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/OTQ5ODAwLmpwZw.jpg","description":"Vice President"}]' >}}}
+```
+
+{{< team items='[{"name":"Koa Amin","image":"https://images.generated.photos/kBmZ3-ZV_H_siHy0kJoPMXxO90it5palMqarwVB07Xc/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NTk0MDA0LmpwZw.jpg","description":"President"},{"name":"Albert Parker","image":"https://images.generated.photos/M9uItQDtYe_6yn-aoBV5kVdvil03ECYX-rmnGPBEUDs/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/OTQ5ODAwLmpwZw.jpg","description":"Vice President"}]' >}}
+
+## S4: Inline single item with label
+
+```lua
+{{{< team label="speaker-team" name="<em>Zaria West</em>" image="https://images.generated.photos/GYbbXppoPDuSml-FZxFJrHiGgQY3ZagpoN0QpZZ7xEY/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDI4NTY3LmpwZw.jpg" description="Lead speaker" >}}}
+```
+
+{{< team label="speaker-team" name="<em>Zaria West</em>" image="https://images.generated.photos/GYbbXppoPDuSml-FZxFJrHiGgQY3ZagpoN0QpZZ7xEY/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDI4NTY3LmpwZw.jpg" description="Lead speaker" >}}

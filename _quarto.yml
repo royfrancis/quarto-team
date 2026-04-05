@@ -1,0 +1,41 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Team"
+  site-url: "https://royfrancis.github.io/quarto-team/"
+  description: "A quarto extension to add team profile layout for html and revealjs formats"
+  navbar:
+    left:
+      - text: "Home"
+        href: "index.html"
+        aria-label: "Home"
+      - text: "Usage"
+        href: "usage.html"
+        aria-label: "Usage"
+      - text: "Presentation"
+        href: "revealjs.html"
+        aria-label: "RevealJS Presentation"
+      - text: "Versions"
+        href: "changelog.html"
+        aria-label: "Versions"
+    right:
+      - icon: github
+        aria-label: "GitHub"
+        href: https://github.com/royfrancis/quarto-team
+  page-footer:
+    border: false
+    left: "{{< meta current_year >}} Roy Francis • [MIT License](https://choosealicense.com/licenses/mit/)"
+    right: "Published with [Quarto](https://quarto.org/) v{{< meta quarto_version >}}"
+
+format:
+  html:
+    theme: pulse
+    toc: true
+    code-overflow: wrap
+    title-block-banner: true
+
+filters:
+  - custom.lua
+  - team

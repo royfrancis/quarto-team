@@ -7,6 +7,10 @@
   border-radius: 15px;
 }
 
+#quarto-team-team-d .team-parent {
+  justify-content: center;
+}
+
 #quarto-team-team-d .name {
   color: steelblue;
 }

@@ -1,92 +1,108 @@
--- Author: Roy Francis
+--- @module team
+--- @license MIT
+--- @author Roy Francis
+--- Quarto shortcode extension entrypoint for team layouts.
 
--- Add html dependencies
-local function addHTMLDeps()
-  -- add the HTML requirements
-  quarto.doc.add_html_dependency({
-    name = 'team',
-    stylesheets = {'team.css'}
-  })
+local function load_module(path)
+  return require(quarto.utils.resolve_path(path):gsub("%.lua$", ""))
 end
 
--- Check if empty or nil
-local function isEmpty(s)
-  return s == '' or s == nil
-end
+local deps = load_module("_modules/dependencies.lua")
+local items_mod = load_module("_modules/items.lua")
+local render_mod = load_module("_modules/render.lua")
+local utils = load_module("_modules/utils.lua")
 
--- Main team Function Shortcode
-return {
+--- Determine the current output mode and register required dependencies.
+--- @return string
+local function detect_output_mode()
+  if quarto.doc.is_format("revealjs") then
+    deps.add_revealjs_once()
+    return "html"
+  end
 
-["team"] = function(args, kwargs, meta)
-  
   if quarto.doc.is_format("html:js") then
-    addHTMLDeps()
+    deps.add_html_once()
+    return "html"
+  end
 
-    local teamId = args[1]
-    local team_items = meta["team"]
+  return "fallback"
+end
 
-    for i = 1, #team_items do
-        if next(team_items[i]) == teamId then
-            team_items = team_items[i][teamId]
-            break
-        end
-    end
+--- Resolve shortcode label from positional or named arguments.
+--- For inline content, a deterministic label is generated from the payload.
+--- @param args table
+--- @param kwargs table
+--- @return string|nil, string|nil
+local function resolve_label(args, kwargs)
+  local label = utils.get_kwarg(kwargs, "label")
+  local has_label = label ~= ""
+  local has_args = #args > 0
+  local has_inline = items_mod.has_inline_content(kwargs)
 
-    local team_start = "<div id = \"quarto-team-" .. teamId .. "\" class = \"quarto-team\">\n"
-    team_start = team_start .. "<div class=\"team-parent\">\n"
-    local team_end = "</div>\n</div>\n"
-    
-    for i = 1, #team_items do
-      
-      local item = team_items[i]
+  if has_label and has_args then
+    return nil, "Use either a positional argument or the 'label' kwarg, not both."
+  end
 
-      if isEmpty(item.name) then
-        error("Error: Missing required field 'name' in extension 'team'.")
-      end
+  if not has_label and not has_args and not has_inline then
+    return nil, "No arguments provided. Supply a metadata label or inline team items."
+  end
 
-      if isEmpty(item.image) then
-        error("Error: Missing required field 'image' in extension 'team'.")
-      end
-
-      local teamImage = pandoc.utils.stringify(item.image)
-      local teamName = pandoc.utils.stringify(item.name)
-      
-      team_start = team_start .. "<div class=\"team-child\" >\n"
-
-      team_start = team_start .. "<div>\n"
-      if not isEmpty(item.image_url) then
-        local teamImageUrl = pandoc.utils.stringify(item.image_url)
-        team_start = team_start .. "<a href=\"" .. teamImageUrl .. "\">\n<img src=\"" .. teamImage .. "\"></a>\n"
-      else
-        team_start = team_start .. "<img src=\"" .. teamImage .. "\">\n"
-      end
-      team_start = team_start .. "</div>\n"
-
-      if not isEmpty(item.name_url) then
-        local teamNameUrl = pandoc.utils.stringify(item.name_url)
-        team_start = team_start .. "<a href=\"" .. teamNameUrl .. "\">\n<div class=\"name\">\n" .. teamName .. "</div></a>\n"
-      else
-        team_start = team_start .. "<div class=\"name\">\n" .. teamName .. "</div>\n"
-      end
-      
-      if not isEmpty(item.description) then
-        local teamDescription = pandoc.utils.stringify(item.description)
-        team_start = team_start .. "<div class=\"description\">\n"
-        team_start = team_start .. teamDescription
-        team_start = team_start .. "</div>\n"
-      end
-
-      team_start = team_start .. "</div>\n"
-      
-    end
-
-    team_start = team_start .. team_end
-    return pandoc.RawInline("html", team_start)
-
+  local team_id
+  if has_label then
+    team_id = label
+  elseif has_args then
+    team_id = pandoc.utils.stringify(args[1])
   else
-    print("Warning: teams are disabled because output format is not HTML.")
+    team_id = "team-" .. utils.hash_string(items_mod.inline_signature(kwargs))
+  end
+
+  if not utils.is_valid_label(team_id) then
+    return nil, string.format(
+      "'%s': Label contains invalid characters. Only letters, numbers, dashes (-) and underscores (_) are allowed.",
+      team_id
+    )
+  end
+
+  return team_id, nil
+end
+
+--- Resolve team items from metadata or inline shortcode kwargs.
+--- @param kwargs table
+--- @param meta table
+--- @param team_id string
+--- @return table|nil, string|nil
+local function resolve_items(kwargs, meta, team_id)
+  if items_mod.has_inline_content(kwargs) then
+    return items_mod.from_kwargs(kwargs, team_id)
+  end
+
+  return items_mod.from_meta(meta, team_id)
+end
+
+--- Render a single team shortcode instance.
+--- @param args table
+--- @param kwargs table
+--- @param meta table
+--- @return pandoc.Blocks|pandoc.RawInline|pandoc.Strong|pandoc.Null
+local function render_team(args, kwargs, meta)
+  local format = detect_output_mode()
+  if format == "fallback" then
     return pandoc.Null()
   end
 
+  local user_label, label_error = resolve_label(args, kwargs)
+  if label_error then
+    return render_mod.error_inline(label_error, format)
+  end
+
+  local team_items, items_error = resolve_items(kwargs, meta, user_label)
+  if items_error then
+    return render_mod.error_inline(items_error, format)
+  end
+
+  return render_mod.html("quarto-team-" .. user_label, team_items, user_label)
 end
+
+return {
+  team = render_team,
 }
