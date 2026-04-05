@@ -53,7 +53,9 @@ team:
       name_url: https://images.generated.photos/cdXGyJ8-yGT8WjeCEjvhvcwBNjbVsB6ip8Tdj29jNtI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDY0ODIyLmpwZw.jpg
       image: https://images.generated.photos/cdXGyJ8-yGT8WjeCEjvhvcwBNjbVsB6ip8Tdj29jNtI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDY0ODIyLmpwZw.jpg
       image_url: https://images.generated.photos/cdXGyJ8-yGT8WjeCEjvhvcwBNjbVsB6ip8Tdj29jNtI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDY0ODIyLmpwZw.jpg
-      description: Description
+      description: |
+        This description mixes <b>HTML</b> and markdown.  
+        Visit <a href="https://quarto.org">Quarto</a> for details.  
     - name: Raquel Terell
       name_url: https://images.generated.photos/IgdOCj2Vb_fq44z372xJwGnUTKwD7sZhptol5Ga9yQI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/Mjc1NDYzLmpwZw.jpg
       image: https://images.generated.photos/IgdOCj2Vb_fq44z372xJwGnUTKwD7sZhptol5Ga9yQI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/Mjc1NDYzLmpwZw.jpg
@@ -248,7 +250,9 @@ team:
       name_url: https://images.generated.photos/cdXGyJ8-yGT8WjeCEjvhvcwBNjbVsB6ip8Tdj29jNtI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDY0ODIyLmpwZw.jpg
       image: https://images.generated.photos/cdXGyJ8-yGT8WjeCEjvhvcwBNjbVsB6ip8Tdj29jNtI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDY0ODIyLmpwZw.jpg
       image_url: https://images.generated.photos/cdXGyJ8-yGT8WjeCEjvhvcwBNjbVsB6ip8Tdj29jNtI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDY0ODIyLmpwZw.jpg
-      description: Description
+      description: |
+        This description mixes <b>HTML</b> and markdown.  
+        Visit <a href="https://quarto.org">Quarto</a> for details.  
     - name: Raquel Terell
       name_url: https://images.generated.photos/IgdOCj2Vb_fq44z372xJwGnUTKwD7sZhptol5Ga9yQI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/Mjc1NDYzLmpwZw.jpg
       image: https://images.generated.photos/IgdOCj2Vb_fq44z372xJwGnUTKwD7sZhptol5Ga9yQI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/Mjc1NDYzLmpwZw.jpg
