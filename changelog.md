@@ -3,6 +3,10 @@ title: Versions
 format: html
 ---
 
+## v1.1.1
+- Adjusted default grid style
+- Added arguments for custom CSS classes on name, image, and description elements
+
 ## v1.1.0
 
 - Reorganized the shortcode into documented Lua modules

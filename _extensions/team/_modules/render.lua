@@ -52,9 +52,16 @@ end
 --- @param team_dom_id string
 --- @param team_items table
 --- @param user_label string
+--- @param name_class string|nil
+--- @param image_class string|nil
+--- @param description_class string|nil
 --- @return pandoc.Blocks
-function M.html(team_dom_id, team_items, user_label)
+function M.html(team_dom_id, team_items, user_label, name_class, image_class, description_class)
   local blocks = pandoc.Blocks({})
+
+  local name_class_extra = (name_class ~= nil and name_class ~= "") and (" " .. utils.escape_html_attr(name_class)) or ""
+  local image_class_attr = (image_class ~= nil and image_class ~= "") and (' class="' .. utils.escape_html_attr(image_class) .. '"') or ""
+  local desc_class_extra = (description_class ~= nil and description_class ~= "") and (" " .. utils.escape_html_attr(description_class)) or ""
 
   blocks:insert(pandoc.RawBlock(
     "html",
@@ -89,7 +96,7 @@ function M.html(team_dom_id, team_items, user_label)
 
       blocks:insert(pandoc.RawBlock(
         "html",
-        '<img src="' .. image_src .. '" alt="' .. image_alt .. '" loading="lazy">'
+        '<img src="' .. image_src .. '" alt="' .. image_alt .. '"' .. image_class_attr .. ' loading="lazy">'
       ))
 
       if image_url ~= "" then
@@ -107,7 +114,7 @@ function M.html(team_dom_id, team_items, user_label)
         ))
       end
 
-      blocks:insert(pandoc.RawBlock("html", '<div class="name team-name">'))
+      blocks:insert(pandoc.RawBlock("html", '<div class="name team-name' .. name_class_extra .. '">'))
       blocks:insert(pandoc.Plain(utils.content_to_inlines(item.name)))
       blocks:insert(pandoc.RawBlock("html", "</div>"))
 
@@ -116,7 +123,7 @@ function M.html(team_dom_id, team_items, user_label)
       end
 
       if not utils.is_empty(item.description) then
-        blocks:insert(pandoc.RawBlock("html", '<div class="description team-description">'))
+        blocks:insert(pandoc.RawBlock("html", '<div class="description team-description' .. desc_class_extra .. '">'))
         blocks:extend(utils.content_to_blocks(item.description))
         blocks:insert(pandoc.RawBlock("html", "</div>"))
       end

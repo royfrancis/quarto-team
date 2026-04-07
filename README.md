@@ -40,7 +40,7 @@ Inline configuration is also supported.
 {{< team items='[{"name":"Koa Amin","image":"https://images.generated.photos/kBmZ3-ZV_H_siHy0kJoPMXxO90it5palMqarwVB07Xc/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NTk0MDA0LmpwZw.jpg","description":"President"}]' >}}
 ```
 
-`name` and `description` accept markdown and raw HTML in YAML metadata and inline configuration. Team item ids are generated automatically unless an explicit `id` is supplied.
+`name` and `description` accept markdown and raw HTML in YAML metadata and inline configuration. Team item ids are generated automatically unless an explicit `id` is supplied. Use `name_class`, `image_class`, and `description_class` shortcode arguments to add custom CSS classes to the name, image, and description elements.
 
 For more examples and usage guide, see [here](https://royfrancis.github.io/quarto-team).
 

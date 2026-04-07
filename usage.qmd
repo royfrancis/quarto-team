@@ -106,6 +106,7 @@ team:
 format:
   html:
    css: styles.css
+   code-overflow: wrap
 filters:
   - team
 ---
@@ -339,6 +340,20 @@ Background pattern has been added, the grid is center aligned and the name color
 ```
 
 {{< team team-d >}}
+
+### Custom element classes
+
+Use `name_class`, `image_class`, and `description_class` shortcode arguments to add one or more CSS classes directly to the name element, image element, and description element respectively. Multiple classes are separated by spaces.
+
+```lua
+{{{< team team-a name_class="fst-italic" image_class="rounded shadow-sm border" description_class="text-decoration-line-through" >}}}
+```
+
+The classes are appended to the existing built-in classes (`team-name`, and `team-description`), so you can use them alongside targeting the default classes in CSS.
+
+{{< team team-a name_class="fst-italic" image_class="rounded shadow-sm border" description_class="text-decoration-line-through" >}}
+
+The classes in this example come from [Bootstrap](https://getbootstrap.com/docs/5.0/utilities/text/), but you can add your own as well.
 
 ### Item IDs
 

@@ -100,7 +100,11 @@ local function render_team(args, kwargs, meta)
     return render_mod.error_inline(items_error, format)
   end
 
-  return render_mod.html("quarto-team-" .. user_label, team_items, user_label)
+  local name_class = utils.get_kwarg(kwargs, "name_class")
+  local image_class = utils.get_kwarg(kwargs, "image_class")
+  local description_class = utils.get_kwarg(kwargs, "description_class")
+
+  return render_mod.html("quarto-team-" .. user_label, team_items, user_label, name_class, image_class, description_class)
 end
 
 return {
