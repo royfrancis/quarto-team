@@ -8,7 +8,7 @@
   display: -ms-grid;
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(var(--team-dim), max-content));
+  grid-template-columns: repeat(auto-fit, var(--team-dim));
   align-items: start;
 }
 
