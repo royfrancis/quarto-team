@@ -6,6 +6,8 @@ format: html
 ## v1.1.1
 - Adjusted default grid style
 - Added arguments for custom CSS classes on name, image, and description elements
+- Removed mention of filters as it's not needed for shortcodes
+- Updated error style
 
 ## v1.1.0
 

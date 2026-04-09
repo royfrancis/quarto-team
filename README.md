@@ -1,4 +1,4 @@
-# team  ![build](https://github.com/royfrancis/quarto-team/workflows/deploy/badge.svg)
+# team ![build](https://github.com/royfrancis/quarto-team/workflows/deploy/badge.svg)
 
 A quarto shortcode extension to add team profile layouts for html and revealjs formats.
 
@@ -27,8 +27,6 @@ team:
       image: image.jpg
       image_url: https://quarto.org/
       description: Description
-filters:
-  - team
 ---
 
 {{< team team-1 >}}

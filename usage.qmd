@@ -107,8 +107,6 @@ format:
   html:
    css: styles.css
    code-overflow: wrap
-filters:
-  - team
 ---
 
 ## Install
@@ -124,7 +122,6 @@ This will install the extension under the `_extensions` subdirectory.
 
 ## Usage
 
-- Add `team` to filters  
 - Define team contents (name, image, etc ...) under yaml keyword `team`  
 - Insert shortcode in the quarto document  
 
@@ -137,8 +134,6 @@ team:
     - image: [url/path to image]
       name: [text content for name]
       description: [text content for description]
-filters:
-  - team
 ---
 
 {{{< team [label] >}}}
@@ -155,8 +150,6 @@ team:
     - name: Preston Donald
       image: https://images.generated.photos/mwPp9cKhJ9MXZ-w8_RUUAOTi7LqElZb7OvQrEb_IVLA/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/ODc5NzcyLmpwZw.jpg
       description: Description
-filters:
-  - team
 ---
 
 {{{< team team >}}}
@@ -213,8 +206,6 @@ team:
     - name: Niklaus Lugo
       image: https://images.generated.photos/NmE9GJA6meMfgzuYPtkv_7FYrFqV90Cj6-ClqetB5Dk/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NTI2NTkxLmpwZw.jpg
       description: Description
-filters:
-  - team
 ---
 
 **Team A**
@@ -270,8 +261,6 @@ team:
       image_url: https://images.generated.photos/NmE9GJA6meMfgzuYPtkv_7FYrFqV90Cj6-ClqetB5Dk/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NTI2NTkxLmpwZw.jpg
       description: Description
 format: html
-filters:
-  - team
 ---
 
 {{{< team team-c >}}}
@@ -307,8 +296,6 @@ team:
 format:
   html:
     css: styles.css
-filters:
-  - team
 ---
 
 {{{< team team-d >}}}
@@ -367,8 +354,6 @@ team:
       name: Koa Amin
       image: https://images.generated.photos/kBmZ3-ZV_H_siHy0kJoPMXxO90it5palMqarwVB07Xc/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NTk0MDA0LmpwZw.jpg
       description: President
-filters:
-  - team
 ---
 
 {{{< team explicit-id >}}}

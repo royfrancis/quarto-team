@@ -38,4 +38,3 @@ format:
 
 filters:
   - custom.lua
-  - team

@@ -20,8 +20,6 @@ format:
   revealjs:
     smaller: true
     scrollable: true
-filters:
-  - team
 ---
 
 ## S1: YAML metadata
